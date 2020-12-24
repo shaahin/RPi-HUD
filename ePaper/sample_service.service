@@ -1,0 +1,14 @@
+[Unit]
+Description=eInk HUD application
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/shahin/Projects/eInk
+ExecStart=sudo python3 /home/shahin/Projects/eInk/main.py
+RemainAfterExit=true
+ExecStop=sudo python3 /home/shahin/Projects/eInk/goodbye.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
