@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
 import epd2in13
@@ -84,5 +84,7 @@ try:
     epd.sleep()
 
 except:
+
     print('traceback.format_exc():\n%s',traceback.format_exc())
+    time.sleep(10)
     exit()

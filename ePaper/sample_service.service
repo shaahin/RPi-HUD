@@ -4,10 +4,9 @@ After=network.target
 
 [Service]
 User=root
-WorkingDirectory=/home/shahin/Projects/eInk
-ExecStart=sudo python3 /home/shahin/Projects/eInk/main.py
+ExecStart=/usr/bin/sudo /root/Projects/eInk/main.sh
 RemainAfterExit=true
-ExecStop=sudo python3 /home/shahin/Projects/eInk/goodbye.py
+ExecStop=sudo python3 /root/Projects/eInk/goodbye.py
 Restart=always
 
 [Install]
